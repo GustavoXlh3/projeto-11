@@ -3,7 +3,7 @@ var corredor, corredorImg
 var paredeInv1, paredeInv2
 function preload(){
   ruaImg = loadImage("path.png");
-  
+
   corredorImg = loadAnimation("Runner-1.png", "Runner-2.png", "Runner-1.png", "Runner-2.png");
 }
 
@@ -40,6 +40,7 @@ function draw() {
     corredor.velocityX = -5;
   }
   corredor.collide(paredeInv1);
+  corredor.collide(paredeInv2);
 
   drawSprites();
 }
